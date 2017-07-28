@@ -1,0 +1,14 @@
+﻿<Application x:Class="Demo1.Starter.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Demo1.Starter"
+             xmlns:vm="clr-namespace:Demo1.ViewModel;assembly=Demo1.ViewModel"
+             xmlns:controls="clr-namespace:Demo1.View.Controls;assembly=Demo1.View">
+    <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type vm:Demo1MainWindowViewModel}">
+                <controls:PatientControl/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
